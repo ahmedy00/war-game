@@ -22,7 +22,7 @@ const options = {
     },
     text: ['High', 'Low'],
     calculable: true,
-    padding: 50
+    padding: 20
   },
   toolbox: {
       show: true,
