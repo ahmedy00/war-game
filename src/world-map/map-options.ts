@@ -70,6 +70,8 @@ const options = {
           { name: 'Palestine', value: '5153135' },
           { name: 'Iraq', value: '40222503' },
           { name: 'Iran', value: '83896400' },
+          { name: 'North Cyprus', value: '382836'},
+          { name: 'South Cyprus', value: '1207359'},
         ]
       }
     ]
