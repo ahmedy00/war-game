@@ -3,7 +3,7 @@
     <v-card>
       <v-layout>
         <NavBar/>
-        <v-main style="height: 100vh;">
+        <v-main class="main">
           <MapBase/>
         </v-main>
       </v-layout>
@@ -15,3 +15,9 @@
   import MapBase from '@/components/MapBase.vue'
   import NavBar from '@/components/NavBar.vue'
 </script>
+
+<style scoped>
+  .main {
+    height: 100vh
+  }
+</style>
