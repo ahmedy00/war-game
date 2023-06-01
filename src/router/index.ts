@@ -1,7 +1,7 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 
-import HomePage from '@/components/Home.vue'
+import MapBase from '@/components/MapBase.vue'
 
 const routes = [
   {
@@ -10,8 +10,8 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'Home',
-        component: HomePage,
+        name: 'MapBase',
+        component: MapBase,
       },
     ],
   },
