@@ -9,7 +9,7 @@ export const useAppStore = defineStore('app', {
   actions: {
     changeTheme (theme: string) {
       this.selectedTheme = theme
-      this.themeMainColor = theme === 'dark' ? '#2c302d' : '#d3ded6'
+      this.themeMainColor = theme === 'Dark' ? '#2c302d' : '#d3ded6'
     }
   }
 })
