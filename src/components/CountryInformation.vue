@@ -12,13 +12,6 @@
 
 <script setup lang="ts">
 
-import {Ref, ref} from 'vue'
-
-const props = defineProps(['isCardVisible'])
-
-const isCardVisible: Ref<boolean> = ref(props.isCardVisible)
-
-
 </script>
 
 

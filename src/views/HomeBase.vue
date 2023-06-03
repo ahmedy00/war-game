@@ -3,9 +3,9 @@
     <v-card>
       <v-layout>
         <NavBar/>
-        <v-main class="main d-flex flex-row">
-          <MapBase/>
-          <CountryInformation/>
+        <v-main class="main">
+          <BottomNavBar/>
+          <Base/>
         </v-main>
       </v-layout>
     </v-card>
@@ -13,9 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import MapBase from '@/components/MapBase.vue'
-import NavBar from '@/components/NavBar.vue'
-import CountryInformation from '@/components/CountryInformation.vue'
+import NavBar from '@/components/Navigators/NavBar.vue'
+import Base from '@/components/Base.vue'
+import BottomNavBar from '@/components/Navigators/BottomNavBar.vue'
 
 </script>
 
