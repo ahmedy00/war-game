@@ -16,6 +16,15 @@
 import NavBar from '@/components/Navigators/NavBar.vue'
 import Base from '@/components/Base.vue'
 import BottomNavBar from '@/components/Navigators/BottomNavBar.vue'
+import { onBeforeMount } from 'vue'
+import { useAppStore } from '@/store/app'
+
+const appStore = useAppStore()
+onBeforeMount(() => {
+  if (!appStore.selectedTheme) {
+    appStore.changeTheme('light')
+  }
+})
 
 </script>
 
