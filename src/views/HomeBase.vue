@@ -21,8 +21,8 @@ import { useAppStore } from '@/store/app'
 
 const appStore = useAppStore()
 onBeforeMount(() => {
-  if (!appStore.selectedTheme) {
-    appStore.changeTheme('light')
+  if (userDefinedTheme.selected_theme) {
+    appStore.changeTheme('Light')
   }
 })
 
