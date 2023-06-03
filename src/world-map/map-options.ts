@@ -2,13 +2,15 @@ const options = {
   textStyle: {},
   title: {
     text: 'World War Map',
-    left: 'center'
+    left: 'center',
+    padding: 20,
   },
   tooltip: {
     trigger: 'item'
   },
   visualMap: {
     left: 'right',
+    top: 'top',
     min: 2951740,
     max: 83896400,
     inRange: {
@@ -30,16 +32,10 @@ const options = {
       left: 'left',
       top: 'top',
       feature: {
-        dataView: { readOnly: false },
         restore: {},
         saveAsImage: {}
       }
     },
-  legend: {
-    data: [
-      'testData'
-    ]
-  },
   series: [
       {
         name: 'Population',
