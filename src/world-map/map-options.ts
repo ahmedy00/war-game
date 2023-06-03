@@ -47,13 +47,29 @@ const options = {
         map: 'world',
         roam: true,
         selectedMode: 'single',
-        markLine: {
-          symbol: 'triangle',
-          symbolSize: 100
+        select: {
+          itemStyle: {
+            color: null,
+            borderColor: 'none',
+            borderWidth: 1,
+            shadowOffsetX: 5,
+            shadowOffsetY: 2,
+            shadowColor: 'rgba(0,0,0,0.9)'
+         }
         },
+        label: {
+          show: false,
+        },
+        itemStyle: {
+          color: 'none',
+          },
         emphasis: {
+          disabled: false,
           label: {
             show: true
+          },
+          itemStyle: {
+            areaColor: 'none',
           }
         },
         data: [
