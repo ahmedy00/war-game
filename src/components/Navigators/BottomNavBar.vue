@@ -44,6 +44,7 @@ const themeNames = ref(['Light', 'Dark'])
 const changeTheme = (themeName: string) => {
   // FIXME: After page refresh theme selection will be lost
   appStore.changeTheme(themeName)
+  appStore.showNotification('ThemeChanged', true, 4000)
 }
 
 </script>

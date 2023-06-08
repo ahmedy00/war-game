@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <Notification/>
     <v-card>
       <v-layout>
         <NavBar/>
@@ -18,6 +19,7 @@ import Base from '@/components/Base.vue'
 import BottomNavBar from '@/components/Navigators/BottomNavBar.vue'
 import { onBeforeMount } from 'vue'
 import { useAppStore } from '@/store/app'
+import Notification from '@/components/Helpers/Notification.vue'
 
 const appStore = useAppStore()
 onBeforeMount(() => {
