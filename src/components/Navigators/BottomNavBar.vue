@@ -48,7 +48,6 @@ import { useAppStore } from '@/store/app'
 
 
 const appStore = useAppStore()
-console.log('color', appStore.theme)
 
 const themeNames = ref(['Light', 'Dark'])
 
