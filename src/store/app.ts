@@ -1,21 +1,8 @@
 // Utilities
 import { defineStore } from 'pinia'
+import { StateType } from '@/types'
 
-type StateType = {
-  theme: {
-    name: string,
-    mainColor: string,
-    oppositeColor: string
-  }
-  notification: {
-    text: string,
-    show: boolean,
-    timeOut: number
-  }
-}
 export const useAppStore = defineStore('app', {
-
-
 
   state: () => ({
     theme: {
