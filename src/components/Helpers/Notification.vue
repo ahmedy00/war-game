@@ -1,17 +1,12 @@
 <template>
   <v-snackbar
-    top
-    absolute
+    location="top"
+    :absolute="true"
     transition="scroll-y-transition"
     v-model="appStore.notification.show"
     :timeout="appStore.notification.timeOut"
   >
-    <span>text</span>
-    <template v-slot:actions="{ attrs }">
-      <v-btn @click="closeNotification" v-bind="attrs">
-        <v-icon> mdi-close </v-icon>
-      </v-btn>
-    </template>
+    <span>{{ appStore.notification.text }}</span>
   </v-snackbar>
 </template>
 
@@ -20,9 +15,6 @@ import { useAppStore } from '@/store/app'
 
 const appStore = useAppStore()
 
-const closeNotification = () => {
-  console.log('close')
-}
 
 </script>
 

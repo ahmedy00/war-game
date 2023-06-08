@@ -1,15 +1,13 @@
 <template>
   <v-app>
     <Notification/>
-    <v-card>
-      <v-layout>
-        <NavBar/>
-        <v-main class="main">
-          <BottomNavBar/>
-          <Base/>
-        </v-main>
-      </v-layout>
-    </v-card>
+    <v-layout>
+      <NavBar/>
+      <v-main class="main">
+        <BottomNavBar/>
+        <Base/>
+      </v-main>
+    </v-layout>
   </v-app>
 </template>
 
