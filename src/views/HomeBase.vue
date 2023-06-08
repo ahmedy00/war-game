@@ -21,9 +21,7 @@ import Notification from '@/components/Helpers/Notification.vue'
 
 const appStore = useAppStore()
 onBeforeMount(() => {
-  if (!appStore.selectedTheme) {
-    appStore.changeTheme('Light')
-  }
+  appStore.initializeTheme()
 })
 
 </script>

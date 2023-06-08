@@ -1,14 +1,14 @@
 <template>
-  <v-bottom-navigation :style="{background: appStore.themeMainColor}" grow>
-    <v-btn :color="appStore.themeOppositeColor" value="recent">
+  <v-bottom-navigation :style="{background: appStore.theme.mainColor}" grow>
+    <v-btn :color="appStore.theme.oppositeColor" value="recent">
       <v-icon>mdi-history</v-icon>
       Recent
     </v-btn>
-    <v-btn :color="appStore.themeOppositeColor" value="favorites">
+    <v-btn :color="appStore.theme.oppositeColor" value="favorites">
       <v-icon>mdi-heart</v-icon>
       Favorites
     </v-btn>
-    <v-btn :color="appStore.themeOppositeColor" value="nearby">
+    <v-btn :color="appStore.theme.oppositeColor" value="nearby">
       <v-icon>mdi-map-marker</v-icon>
       Nearby
     </v-btn>
@@ -16,9 +16,9 @@
     <!-- TODO: Find a better way to make cursor pointer -->
     <v-menu class="cursor-pointer" :location="'top'">
       <template v-slot:activator="{ props }">
-        <v-btn :color="appStore.themeOppositeColor" v-bind="props">
+        <v-btn :color="appStore.theme.oppositeColor" v-bind="props">
           <v-icon>mdi-theme-light-dark</v-icon>
-            Change Theme: {{ appStore.selectedTheme }}
+            Change Theme: {{ appStore.theme.name }}
         </v-btn>
       </template>
         <v-list dense>
@@ -42,7 +42,6 @@ const appStore = useAppStore()
 const themeNames = ref(['Light', 'Dark'])
 
 const changeTheme = (themeName: string) => {
-  // FIXME: After page refresh theme selection will be lost
   appStore.changeTheme(themeName)
   appStore.showNotification('ThemeChanged', true, 4000)
 }
