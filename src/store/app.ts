@@ -19,8 +19,8 @@ export const useAppStore = defineStore('app', {
   actions: {
     changeTheme (name: string) {
       this.theme.name = name
-      this.theme.mainColor = name === 'Dark' ? '#2c302d' : '#d3ded6'
-      this.theme.oppositeColor = name === 'Dark' ? '#d3ded6' :'#2c302d'
+      this.theme.mainColor = name === 'Dark' ? '#333' : '#f5f5f5'
+      this.theme.oppositeColor = name === 'Dark' ? '#f5f5f5' :'#333'
 
       localStorage.setItem('theme', JSON.stringify(this.theme))
     },
