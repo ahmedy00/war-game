@@ -1,9 +1,17 @@
+import { useAppStore } from '@/store/app'
+
+const appStore = useAppStore()
+appStore.initializeTheme()
+
 const options = {
   textStyle: {},
   title: {
     text: 'World War Map',
     left: 'center',
     padding: 20,
+    textStyle: {
+      color: appStore?.theme?.oppositeColor
+    }
   },
   tooltip: {
     trigger: 'item'
@@ -13,6 +21,9 @@ const options = {
     top: 'top',
     min: 2951740,
     max: 83896400,
+    textStyle: {
+      color: appStore?.theme?.oppositeColor
+    },
     inRange: {
       color: [
         '#edd100',

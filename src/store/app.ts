@@ -28,6 +28,8 @@ export const useAppStore = defineStore('app', {
       const storedTheme = localStorage.getItem('theme')
       if (storedTheme) {
         this.theme = JSON.parse(storedTheme)
+      } else {
+        this.changeTheme('Light')
       }
     },
     showNotification (text: string, isVisible: boolean, timeout: number) {
